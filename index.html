@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap_5.0.2/css/bootstrap.min.css" />
+
+    <title>Dribbble Website</title>
+
+    <style>
+      :root {
+        --main-color: #062a45;
+        --secondary-color: #777d7f;
+      }
+
+      @font-face {
+        font-family: "Secular One";
+        src: url("./fonts/SecularOne-Regular.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "AbrilFatface";
+        src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+      }
+
+      .first-element {
+        color: var(--main-color);
+        text-decoration: none;
+        font-family: "Secular One";
+      }
+
+      .second-element {
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-family: "AbrilFatface";
+        font-weight: 100;
+      }
+
+      .ss{
+        font-family: "AbrilFatface" !important;
+        font-weight: 500 !important;
+      }
+
+      .navelements .nav-item {
+        margin-left: 20px;
+      }
+
+      .btn-el span {
+        color: var(--main-color);
+        padding: 3px;
+      }
+
+      .btn-el {
+        border: 1px solid var(--secondary-color);
+        border-radius: 15px;
+      }
+
+      .spaces {
+        display: flex;
+      }
+
+      .center_elements .col {
+        height: 540px;
+      }
+
+      .stronger {
+        font-weight: 700;
+        font-size: 50px;
+      }
+
+      .buttn {
+        text-decoration: none;
+        color: var(--main-color);
+        text-decoration: none;
+        border: 1px solid var(--secondary-color);
+        border-radius: 15px;
+        font-weight: 500;
+      }
+
+      .buttn:first-of-type {
+        background-color: #062a45;
+        color: white;
+      }
+
+      .spaces .buttn {
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+      }
+
+      .buttn-2{
+        text-decoration: none;
+        color: var(--main-color);
+        text-decoration: none;
+        border: 1px solid var(--secondary-color);
+        border-radius: 15px;
+        font-weight: 500;
+      }
+
+      .el div {
+        height: 50px;
+        width: auto;
+      }
+
+      .el div span {
+        color: var(--main-color);
+        font-weight: 500;
+      }
+
+      .last-elements{
+        display: flex;
+        justify-content: center;
+      }
+
+      .last-elements a{
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="logo.jpg" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll navelements"
+              style="--bs-scroll-height: 100px; margin-left: 30%"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active first-element ss"
+                  aria-current="page"
+                  href="#"
+                  >Buy a course</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link second-element" href="#">Success</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link second-element" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link second-element" href="#">Pricing</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <a class="btn buttn-2" type="submit">
+                <span>Get Started</span>
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row center_elements">
+        <div class="col">
+          <div style="height: 15%"></div>
+          <div style="height: 50%">
+            <div>
+              <span class="first-element ss">World class education</span>
+            </div>
+            <div class="stronger first-element">
+              <span>Become</span>
+              <span>a Professional in</span>
+              <span>either field.</span>
+            </div>
+            <div class="second-element">
+              <span>
+                Edcamp helps to gain skills for jobs relevant to the market
+              </span>
+              <span> Over 1000 courses for both teams and individuals. </span>
+            </div>
+            <div class="spaces">
+              <a class="btn buttn"> Get Started </a>
+              <a class="btn buttn"> Learn more </a>
+            </div>
+            <div class="spaces el" style="margin-top: 20px;">
+              <div>
+                <img src="img2.jpg" style="height: 100%" />
+              </div>
+              <div>
+                <div style="height: 20%"></div>
+                <span id="courses" style="height: 50%;margin-left: 2px;">Your Courses</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="img1.jpg" style="float: right" />
+        </div>
+      </div>
+
+      <div class="last-elements">
+        <a>
+          <img src="f1.jpg" />
+        </a>
+
+        <a>
+          <img src="f2.jpg" />
+        </a>
+
+        <a>
+          <img src="f3.jpg" />
+        </a>
+
+        <a>
+          <img src="f4.jpg" />
+        </a>
+      </div>
+    </div>
+    <script src="bootstrap_5.0.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
